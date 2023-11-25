@@ -6,6 +6,7 @@ reset css
    License: none (public domain)
 */
 @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 html,
 body,
 div,
@@ -156,11 +157,11 @@ html {
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   text-size-adjust: none;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 html,
@@ -301,6 +302,50 @@ textarea {
 
 .text-center {
   text-align: center;
+}
+
+.entry-content table:not(.hljs-ln) {
+  width: 100%;
+  margin-bottom: 22px;
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.9375em;
+  line-height: 1.5714;
+  color: #666;
+}
+
+.entry-content table:not(.hljs-ln) thead th {
+  padding: 7px 0 11px;
+  border-left: 1px solid #e6e6e6;
+}
+
+.entry-content table:not(.hljs-ln) tbody td {
+  padding: 7px 0 11px;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
+
+pre {
+  margin: 0;
+}
+
+pre code.hljs {
+  font-family: "Poppins", "SUITE", monospace;
+  letter-spacing: 1px;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 15px !important;
+  margin: 10px 0;
+  box-shadow: 0 0 6px 0 #ddd;
+  line-height: 20px;
+}
+
+.hljs-ln-line.hljs-ln-numbers {
+  padding-right: 10px;
+  color: #ff976d;
+  text-align: right;
+  width: 30px;
 }
 
 body {

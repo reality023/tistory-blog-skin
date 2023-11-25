@@ -1,0 +1,43 @@
+.entry-content table:not(.hljs-ln) {
+  width: 100%;
+  margin-bottom: 22px;
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.9375em;
+  line-height: 1.5714;
+  color: #666;
+}
+
+.entry-content table:not(.hljs-ln) thead th {
+  padding: 7px 0 11px;
+  border-left: 1px solid #e6e6e6;
+}
+
+.entry-content table:not(.hljs-ln) tbody td {
+  padding: 7px 0 11px;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
+
+pre {
+  margin: 0;
+}
+
+pre code.hljs {
+  font-family: "Poppins", "SUITE", monospace;
+  letter-spacing: 1px;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 15px !important;
+  margin: 10px 0;
+  box-shadow: 0 0 6px 0 #ddd;
+  line-height: 20px;
+}
+
+.hljs-ln-line.hljs-ln-numbers {
+  padding-right: 10px;
+  color: #ff976d;
+  text-align: right;
+  width: 30px;
+}
