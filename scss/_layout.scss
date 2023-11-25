@@ -1,0 +1,114 @@
+body {
+  width: 100%;
+}
+
+#wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 520px);
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 520px;
+  min-height: 100vh;
+  background-color: #2f2f2f;
+}
+
+#content-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+// 최상단 타이틀 텍스트
+.content-title {
+  width: 100%;
+  height: 300px;
+  display: none;
+
+  &.home {
+    display: block;
+    background-image: url("https://pixabay.com/get/gc215c678d460ccacd5d82d7c2e545f4f9eb0b3ebac499ae001f98e48e77f80f62981c2564b56cf2175f1a33c2759823a6cb633766ffb14f49e61becb9fa12cd2_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px 46px 0;
+
+    .title {
+      font-weight: 800;
+      font-size: 36px;
+    }
+
+    .sub-title {
+      font-size: 16px;
+    }
+  }
+}
+
+#content-inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  font-weight: bold;
+  line-height: 1.5;
+
+  // 컨텐츠 상단 영역
+  & > #head {
+    text-align: center;
+
+    // 제목글
+    h2 {
+      width: 100%;
+      font-size: 36px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      color: #ffffff;
+      font-weight: 800;
+      text-align: left;
+      padding: 20px 30px 0;
+    }
+
+    // 제목글 하단 날짜
+    .date {
+      font-size: 14px;
+      color: rgb(81, 81, 81);
+      border-radius: 5px;
+      display: flex;
+      padding: 0px 30px 20px;
+    }
+  }
+
+  // 컨텐츠 내용 영역
+  #body {
+    width: 100%;
+    padding: 0 30px;
+
+    &.entry {
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    figure {
+      margin: 10px 0;
+    }
+  }
+}
+
+// Font Style
+p[data-ke-size="size16"] {
+  font-size: 16px;
+}

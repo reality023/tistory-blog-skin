@@ -1,0 +1,305 @@
+// Sidebar Header
+h1 {
+  width: 100%;
+  align-items: center;
+  font-size: 32px;
+  color: #333333;
+  padding: 32px 28px 24px;
+
+  a {
+    width: 86px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      margin-top: 30px;
+    }
+  }
+
+  .jobs {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+// Sidebar Top Blog Menu
+
+.menu {
+  display: flex;
+  width: 100%;
+
+  .blog-menu {
+    width: 100%;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 28px;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 10px;
+        background-color: #151515;
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+
+        & + li {
+          margin-left: 10px;
+        }
+
+        a {
+          font-size: 14px;
+          color: rgb(228, 228, 228);
+        }
+      }
+    }
+  }
+}
+
+// Sidebar Category
+.category {
+  padding: 0px 30px 20px;
+
+  .category-title {
+    font-size: 1.5em;
+    width: 360px;
+    height: 60px;
+    background-color: rgb(82, 82, 82);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-end;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    margin-top: 24px;
+  }
+
+  .tt_category {
+    // tt_category
+    width: 360px;
+    position: relative;
+
+    & > li .link_tit {
+      display: flex;
+      color: white;
+      width: 100%;
+      height: 48px;
+      background-color: black;
+      border-radius: 8px;
+      align-items: center;
+      padding: 0 12px;
+      box-sizing: border-box;
+      margin: 12px 0;
+      font-size: 16px;
+      transition: background 150ms;
+
+      &:hover {
+        background-color: rgb(196, 30, 30);
+      }
+    }
+
+    // tt_category
+    .category_list {
+      & > li {
+        width: 100%;
+
+        & + li {
+          margin-top: 4px;
+        }
+
+        a {
+          color: white;
+          display: flex;
+          width: 100%;
+          height: 40px;
+          background-color: black;
+          border-radius: 8px;
+          align-items: center;
+          padding: 0 12px;
+          box-sizing: border-box;
+          font-weight: 400;
+          transition: background 150ms;
+
+          &:hover {
+            background-color: rgb(30, 83, 196);
+          }
+        }
+
+        .link_item {
+          font-size: 16px;
+        }
+      }
+    }
+
+    // tt_category
+    .sub_category_list {
+      padding: 5px 0;
+      padding-left: 20px;
+      margin: 5px 0;
+
+      & > li + li {
+        margin-top: 5px;
+      }
+
+      & > li {
+        .link_sub_item {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// 카운터
+.counter {
+  color: #444444;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  width: 100%;
+  margin: 20px 0 0;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  & > div + div {
+    margin-left: 10px;
+  }
+
+  & > div + div::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 20px;
+    left: 0;
+    top: 0;
+  }
+
+  em {
+    display: block;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+  }
+
+  .yesterday {
+    color: #6a6;
+  }
+
+  .today {
+    color: #07a;
+  }
+
+  .total {
+    color: #e55;
+  }
+}
+
+// 공지사항 & 최근 댓글
+.notice + .recent {
+  margin-top: 10px;
+}
+
+.notice,
+.recent {
+  padding: 20px;
+  font-size: 14px;
+  color: white;
+  margin: 0 30px;
+  background-color: #000000;
+  border-radius: 5px;
+
+  em {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      padding: 5px 0;
+      a {
+        font-size: 16px;
+        color: white;
+      }
+    }
+  }
+}
+
+.search {
+  padding: 20px 30px;
+  input {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    transition: border 0.3s;
+    padding: 0 20px;
+    font-size: 16px;
+
+    &::placeholder {
+      color: #999999;
+      transition: color 0.3s;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid #666666;
+
+      &::placeholder {
+        color: #cccccc;
+      }
+    }
+  }
+}
+
+.sidebar-switch {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #444444;
+  z-index: 999;
+  transition: left 0.3s;
+  cursor: pointer;
+}
+
+.sidebar-switch.on {
+  left: 340px;
+}
+
+.sidebar-switch ion-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
