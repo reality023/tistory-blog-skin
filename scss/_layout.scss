@@ -38,10 +38,10 @@ body {
 
   &.home {
     display: block;
-    background-image: url("https://pixabay.com/get/gc215c678d460ccacd5d82d7c2e545f4f9eb0b3ebac499ae001f98e48e77f80f62981c2564b56cf2175f1a33c2759823a6cb633766ffb14f49e61becb9fa12cd2_1920.jpg");
+    background-image: url("https://tistory2.daumcdn.net/tistory/4071388/skin/images/sea.jpg");
     background-size: cover;
     background-position: center;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -53,7 +53,12 @@ body {
     }
 
     .sub-title {
-      font-size: 16px;
+      font-size: 20px;
+    }
+
+    .sub-text {
+      font-size: 14px;
+      margin-top: 5px;
     }
   }
 }

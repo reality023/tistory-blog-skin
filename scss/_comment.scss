@@ -1,0 +1,39 @@
+#communicate {
+  margin-top: 10px;
+}
+
+.communicateWrite {
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    textarea {
+      width: 100%;
+      resize: none;
+      border: 0;
+    }
+  }
+
+  .submit {
+    margin-top: 10px;
+    text-align: right;
+    input {
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #2f2f2f;
+      color: white;
+    }
+  }
+
+  .secret {
+    margin-top: 10px;
+    text-align: right;
+  }
+}
+
+.tt_box_namecard {
+  display: none !important;
+}

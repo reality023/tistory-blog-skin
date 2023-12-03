@@ -348,6 +348,75 @@ pre code.hljs {
   width: 30px;
 }
 
+#content-inner #body.entry .tag_label {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+
+#content-inner #body.entry .tag_label span a {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: white;
+}
+
+#content-inner #body.entry .tag_label span a + a {
+  margin-left: 10px;
+}
+
+#content-inner #body figure {
+  margin: 10px 0;
+}
+
+#content-inner h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+#content-inner h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+#content-inner h3 {
+  font-size: 24px;
+  font-size: 700;
+}
+
+#communicate {
+  margin-top: 10px;
+}
+
+.communicateWrite .textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+.communicateWrite .textarea textarea {
+  width: 100%;
+  resize: none;
+  border: 0;
+}
+.communicateWrite .submit {
+  margin-top: 10px;
+  text-align: right;
+}
+.communicateWrite .submit input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: white;
+}
+.communicateWrite .secret {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.tt_box_namecard {
+  display: none !important;
+}
+
 body {
   width: 100%;
 }
@@ -387,10 +456,10 @@ body {
 }
 .content-title.home {
   display: block;
-  background-image: url("https://pixabay.com/get/gc215c678d460ccacd5d82d7c2e545f4f9eb0b3ebac499ae001f98e48e77f80f62981c2564b56cf2175f1a33c2759823a6cb633766ffb14f49e61becb9fa12cd2_1920.jpg");
+  background-image: url("https://tistory2.daumcdn.net/tistory/4071388/skin/images/sea.jpg");
   background-size: cover;
   background-position: center;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -401,7 +470,11 @@ body {
   font-size: 36px;
 }
 .content-title.home .sub-title {
-  font-size: 16px;
+  font-size: 20px;
+}
+.content-title.home .sub-text {
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 #content-inner {
@@ -448,43 +521,44 @@ p[data-ke-size=size16] {
   font-size: 16px;
 }
 
-h1 {
+#sidebar h1 {
   width: 100%;
   align-items: center;
   font-size: 32px;
   color: #333333;
   padding: 32px 28px 24px;
+  box-sizing: border-box;
 }
-h1 a {
+#sidebar h1 a {
   width: 86px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
-h1 a span {
+#sidebar h1 a span {
   margin-top: 30px;
 }
-h1 .jobs {
+#sidebar h1 .jobs {
   color: white;
   font-size: 16px;
   font-weight: 400;
 }
-
-.menu {
+#sidebar .menu {
   display: flex;
   width: 100%;
 }
-.menu .blog-menu {
+#sidebar .menu .blog-menu {
   width: 100%;
 }
-.menu .blog-menu ul {
+#sidebar .menu .blog-menu ul {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 0 28px;
+  box-sizing: border-box;
 }
-.menu .blog-menu ul li {
+#sidebar .menu .blog-menu ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,18 +569,17 @@ h1 .jobs {
   height: 24px;
   border-radius: 8px;
 }
-.menu .blog-menu ul li + li {
+#sidebar .menu .blog-menu ul li + li {
   margin-left: 10px;
 }
-.menu .blog-menu ul li a {
+#sidebar .menu .blog-menu ul li a {
   font-size: 14px;
   color: rgb(228, 228, 228);
 }
-
-.category {
+#sidebar .category {
   padding: 0px 30px 20px;
 }
-.category .category-title {
+#sidebar .category .category-title {
   font-size: 1.5em;
   width: 360px;
   height: 60px;
@@ -520,11 +593,11 @@ h1 .jobs {
   font-weight: 600;
   margin-top: 24px;
 }
-.category .tt_category {
+#sidebar .category .tt_category {
   width: 360px;
   position: relative;
 }
-.category .tt_category > li .link_tit {
+#sidebar .category .tt_category > li .link_tit {
   display: flex;
   color: white;
   width: 100%;
@@ -538,16 +611,16 @@ h1 .jobs {
   font-size: 16px;
   transition: background 150ms;
 }
-.category .tt_category > li .link_tit:hover {
+#sidebar .category .tt_category > li .link_tit:hover {
   background-color: rgb(196, 30, 30);
 }
-.category .tt_category .category_list > li {
+#sidebar .category .tt_category .category_list > li {
   width: 100%;
 }
-.category .tt_category .category_list > li + li {
+#sidebar .category .tt_category .category_list > li + li {
   margin-top: 4px;
 }
-.category .tt_category .category_list > li a {
+#sidebar .category .tt_category .category_list > li a {
   color: white;
   display: flex;
   width: 100%;
@@ -560,25 +633,24 @@ h1 .jobs {
   font-weight: 400;
   transition: background 150ms;
 }
-.category .tt_category .category_list > li a:hover {
+#sidebar .category .tt_category .category_list > li a:hover {
   background-color: rgb(30, 83, 196);
 }
-.category .tt_category .category_list > li .link_item {
+#sidebar .category .tt_category .category_list > li .link_item {
   font-size: 16px;
 }
-.category .tt_category .sub_category_list {
+#sidebar .category .tt_category .sub_category_list {
   padding: 5px 0;
   padding-left: 20px;
   margin: 5px 0;
 }
-.category .tt_category .sub_category_list > li + li {
+#sidebar .category .tt_category .sub_category_list > li + li {
   margin-top: 5px;
 }
-.category .tt_category .sub_category_list > li .link_sub_item {
+#sidebar .category .tt_category .sub_category_list > li .link_sub_item {
   font-size: 14px;
 }
-
-.counter {
+#sidebar .counter {
   color: #444444;
   display: flex;
   align-items: center;
@@ -586,7 +658,7 @@ h1 .jobs {
   width: 100%;
   margin: 20px 0 0;
 }
-.counter > div {
+#sidebar .counter > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -596,10 +668,10 @@ h1 .jobs {
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.counter > div + div {
+#sidebar .counter > div + div {
   margin-left: 10px;
 }
-.counter > div + div::after {
+#sidebar .counter > div + div::after {
   content: "";
   position: absolute;
   display: block;
@@ -608,29 +680,27 @@ h1 .jobs {
   left: 0;
   top: 0;
 }
-.counter em {
+#sidebar .counter em {
   display: block;
 }
-.counter span {
+#sidebar .counter span {
   display: block;
   text-align: center;
 }
-.counter .yesterday {
+#sidebar .counter .yesterday {
   color: #6a6;
 }
-.counter .today {
+#sidebar .counter .today {
   color: #07a;
 }
-.counter .total {
+#sidebar .counter .total {
   color: #e55;
 }
-
-.notice + .recent {
+#sidebar .notice + .recent {
   margin-top: 10px;
 }
-
-.notice,
-.recent {
+#sidebar .notice,
+#sidebar .recent {
   padding: 20px;
   font-size: 14px;
   color: white;
@@ -638,34 +708,33 @@ h1 .jobs {
   background-color: #000000;
   border-radius: 5px;
 }
-.notice em,
-.recent em {
+#sidebar .notice em,
+#sidebar .recent em {
   display: block;
   font-size: 20px;
   text-transform: uppercase;
   padding-bottom: 20px;
   font-weight: 600;
 }
-.notice ul,
-.recent ul {
+#sidebar .notice ul,
+#sidebar .recent ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.notice ul li,
-.recent ul li {
+#sidebar .notice ul li,
+#sidebar .recent ul li {
   padding: 5px 0;
 }
-.notice ul li a,
-.recent ul li a {
+#sidebar .notice ul li a,
+#sidebar .recent ul li a {
   font-size: 16px;
   color: white;
 }
-
-.search {
+#sidebar .search {
   padding: 20px 30px;
 }
-.search input {
+#sidebar .search input {
   width: 100%;
   height: 50px;
   box-sizing: border-box;
@@ -675,46 +744,65 @@ h1 .jobs {
   padding: 0 20px;
   font-size: 16px;
 }
-.search input::-moz-placeholder {
+#sidebar .search input::-moz-placeholder {
   color: #999999;
   -moz-transition: color 0.3s;
   transition: color 0.3s;
 }
-.search input::placeholder {
+#sidebar .search input::placeholder {
   color: #999999;
   transition: color 0.3s;
 }
-.search input:focus {
+#sidebar .search input:focus {
   outline: none;
   border: 1px solid #666666;
 }
-.search input:focus::-moz-placeholder {
+#sidebar .search input:focus::-moz-placeholder {
   color: #cccccc;
 }
-.search input:focus::placeholder {
+#sidebar .search input:focus::placeholder {
   color: #cccccc;
 }
 
 .sidebar-switch {
   position: fixed;
-  left: 20px;
+  right: 20px;
   top: 20px;
-  display: none;
   width: 40px;
   height: 40px;
   border-radius: 5px;
   border: 0;
+  display: none;
   background-color: #444444;
   z-index: 999;
-  transition: left 0.3s;
+  transition: right 0.3s;
   cursor: pointer;
 }
 
 .sidebar-switch.on {
-  left: 340px;
+  right: 540px;
 }
 
 .sidebar-switch ion-icon {
   font-size: 24px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1280px) {
+  #content {
+    width: 100%;
+  }
+  #sidebar {
+    position: fixed;
+    height: 100%;
+    right: -520px;
+    transition: right 300ms;
+    overflow-y: scroll;
+  }
+  #sidebar.on {
+    right: 0;
+  }
+  .sidebar-switch {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

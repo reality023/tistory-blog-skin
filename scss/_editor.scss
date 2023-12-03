@@ -41,3 +41,38 @@ pre code.hljs {
   text-align: right;
   width: 30px;
 }
+
+#content-inner #body.entry .tag_label {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+#content-inner #body.entry .tag_label span a {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: white;
+}
+#content-inner #body.entry .tag_label span a + a {
+  margin-left: 10px;
+}
+#content-inner #body figure {
+  margin: 10px 0;
+}
+
+#content-inner {
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-size: 700;
+  }
+}
