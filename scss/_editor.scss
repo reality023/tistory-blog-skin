@@ -45,22 +45,41 @@ pre code.hljs {
 #content-inner #body.entry .tag_label {
   font-size: 0;
   margin-bottom: 20px;
+
+  span {
+    display: flex;
+    margin-top: 16px;
+    a {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: block;
+      background-color: #2f2f2f;
+      background: linear-gradient(#ff976d, #ff6c5f);
+      color: white;
+    }
+
+    a + a {
+      margin-left: 10px;
+    }
+  }
 }
-#content-inner #body.entry .tag_label span a {
-  font-size: 14px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #2f2f2f;
-  color: white;
-}
-#content-inner #body.entry .tag_label span a + a {
-  margin-left: 10px;
-}
+
 #content-inner #body figure {
   margin: 10px 0;
 }
 
 #content-inner {
+  font-family: "Wanted Sans Variable";
+
+  h1,
+  h2,
+  h3 {
+    line-height: 200%;
+    letter-spacing: 1px;
+  }
+
   h1 {
     font-size: 32px;
     font-weight: 700;
@@ -74,5 +93,10 @@ pre code.hljs {
   h3 {
     font-size: 24px;
     font-size: 700;
+  }
+
+  p {
+    font-size: 20px;
+    letter-spacing: -1px;
   }
 }

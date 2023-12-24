@@ -1007,33 +1007,73 @@
 
   <body id="tt-body-index" data-barba="wrapper" aria-live="polite">
     <div class="page-transition-container">
-      <span
-        class="page-transition"
-        style="
-          translate: none;
-          rotate: none;
-          scale: none;
-          transform: scale(1, 0);
-          transform-origin: 50% 0%;
-        "
-      ></span>
+      <span class="page-transition">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="130"
+          height="130"
+          viewBox="0 0 130 130"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M71.9638 2.88455C75.8098 6.73063 75.8098 12.9663 71.9638 16.8124L23.7763 65L64.9999 106.224L96.375 74.8485H64.9999C59.5607 74.8485 55.1514 70.4392 55.1514 65C55.1514 59.5608 59.5607 55.1515 64.9999 55.1515H120.151C124.135 55.1515 127.726 57.551 129.25 61.2311C130.774 64.9113 129.932 69.1473 127.115 71.9639L71.9638 127.115C68.1177 130.962 61.882 130.962 58.0359 127.115L2.88455 71.9639C-0.961516 68.1179 -0.961516 61.8821 2.88455 58.0361L58.0359 2.88455C61.882 -0.961518 68.1177 -0.961518 71.9638 2.88455Z"
+            fill="url(#paint0_linear_61_39)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_61_39"
+              x1="65"
+              y1="0"
+              x2="65"
+              y2="130"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#9035BB" />
+              <stop offset="1" stop-color="#A486E2" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
     </div>
-
-    <button id="sidebarSwitch" class="sidebar-switch">
-      <ion-icon
-        name="menu-sharp"
-        role="img"
-        class="md hydrated"
-        aria-label="menu sharp"
-      ></ion-icon>
-    </button>
     <div id="wrap" class="content-wrap" data-barba="container">
       <div id="content">
-        <div class="content-title home">
-          <div class="title">GRIDY</div>
-          <div class="sub-title">FRONTEND DEVELOPER</div>
-          <div class="sub-text">디자이너가 되고 싶은 개발자</div>
-        </div>
+        <header class="top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="130"
+            height="130"
+            viewBox="0 0 130 130"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M71.9638 2.88455C75.8098 6.73063 75.8098 12.9663 71.9638 16.8124L23.7763 65L64.9999 106.224L96.375 74.8485H64.9999C59.5607 74.8485 55.1514 70.4392 55.1514 65C55.1514 59.5608 59.5607 55.1515 64.9999 55.1515H120.151C124.135 55.1515 127.726 57.551 129.25 61.2311C130.774 64.9113 129.932 69.1473 127.115 71.9639L71.9638 127.115C68.1177 130.962 61.882 130.962 58.0359 127.115L2.88455 71.9639C-0.961516 68.1179 -0.961516 61.8821 2.88455 58.0361L58.0359 2.88455C61.882 -0.961518 68.1177 -0.961518 71.9638 2.88455Z"
+              fill="url(#paint0_linear_61_39)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_61_39"
+                x1="65"
+                y1="0"
+                x2="65"
+                y2="130"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#9035BB" />
+                <stop offset="1" stop-color="#A486E2" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <button id="sidebarSwitch" class="sidebar-switch">
+            <div class="sidebar-switch__line"></div>
+            <div class="sidebar-switch__line"></div>
+            <div class="sidebar-switch__line"></div>
+          </button>
+        </header>
         <div id="content-inner">
           <div id="head">
             <h2><a href="/188">리액트에서 디버깅을 해보자</a></h2>
@@ -2626,21 +2666,34 @@
         <!-- content-inner close -->
       </div>
       <!-- content close -->
-
+      <style></style>
       <div id="sidebar">
         <h1>
+          <div id="sidebarClose" class="sidebar-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="18"
+              viewBox="0 0 11 18"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.0607 10.0607L3.06069 17.0607C2.4749 17.6464 1.52516 17.6464 0.939371 17.0607C0.353585 16.4749 0.353584 15.5251 0.939371 14.9393L6.87871 9L0.93937 3.06066C0.353583 2.47487 0.353583 1.52513 0.93937 0.939341C1.52516 0.353554 2.4749 0.353554 3.06069 0.93934L10.0607 7.93934C10.6465 8.52513 10.6465 9.47487 10.0607 10.0607Z"
+                fill="#EAC9FF"
+              />
+            </svg>
+          </div>
           <a href="https://gridy.tistory.com/">
-            <img
-              src="https://tistory1.daumcdn.net/tistory/4071388/skin/images/logo.svg"
-            />
-            <!--<span>GRIDY BLOG</span>-->
+            <span>GRIDY</span>
           </a>
           <div class="jobs">Web Frontend Developer</div>
         </h1>
 
         <div class="widget menu">
           <!-- Blog Menu -->
-          <div class="blog-menu">
+          <!-- <div class="blog-menu">
             <ul>
               <li>
                 <a href="/"
@@ -2673,11 +2726,11 @@
                 ></a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
 
         <!-- Counter -->
-        <div class="widget counter text-center">
+        <!-- <div class="widget counter text-center">
           <div class="total">
             <em>ALL</em>
             <span>13,714</span>
@@ -2690,7 +2743,7 @@
             <em>TODAY</em>
             <span>2</span>
           </div>
-        </div>
+        </div> -->
 
         <div class="widget category">
           <!-- Category -->
@@ -2870,16 +2923,17 @@
       var sidebarStatus = false;
       const sidebar = $("#sidebar");
       const sidebarSwitch = $("#sidebarSwitch");
+      const sidebarClose = $("#sidebarClose");
       sidebarSwitch.on("click", function () {
         sidebarStatus = !sidebarStatus;
         sidebar.toggleClass("on");
         sidebarSwitch.toggleClass("on");
+      });
 
-        if (sidebarStatus) {
-          sidebarSwitch.html('<ion-icon name="close-sharp"></ion-icon>');
-        } else {
-          sidebarSwitch.html('<ion-icon name="menu-sharp"></ion-icon>');
-        }
+      $("#sidebarClose").on("click", function () {
+        sidebarStatus = !sidebarStatus;
+        sidebar.removeClass("on");
+        sidebarSwitch.removeClass("on");
       });
     </script>
     <style>
@@ -2923,17 +2977,6 @@
         errorCheck();
       };
     </script>
-    <script>
-      // 상단 헤더
-      if (window.location.href === "https://gridy.tistory.com/") {
-        document.querySelector(".content-title").classList.add("home");
-        document.querySelector(".content-title").innerHTML = `
-			<div class="title">GRIDY</div>
-			<div class="sub-title">FRONTEND DEVELOPER</div>
-			<div class="sub-text">디자이너가 되고 싶은 개발자</div>
-		`;
-      }
-    </script>
 
     <!-- custom library start -->
     <script src="https://unpkg.com/@barba/core"></script>
@@ -2945,18 +2988,18 @@
         let tl = gsap.timeline();
         tl.to(".page-transition", {
           duration: 0.5,
-          scaleY: 1,
           y: "0",
           transformOrigin: "top",
           stagger: 0.2,
+          ease: "power2.inOut",
         });
         tl.to(".page-transition", {
           duration: 0.5,
-          scaleY: 0,
-          y: "0",
+          y: "-100%",
           transformOrigin: "top",
           stagger: 0.2,
           delay: 0.5,
+          ease: "power2.inOut",
         });
       };
 
@@ -2969,14 +3012,15 @@
         tl.fromTo(
           ".page-transition",
           {
-            scaleY: 1,
+            y: 0,
           },
           {
             duration: 0.5,
-            scaleY: 0,
+            y: "-100%",
             transformOrigin: "top",
             stagger: 0.1,
             delay: 1,
+            ease: "power2.inOut",
           }
         );
       };
@@ -3000,7 +3044,9 @@
               transitionExit(data);
 
               await delay(1000);
-              done();
+              window.onload = () => {
+                done();
+              };
             },
             async enter(data) {
               transitionEnter(data);
