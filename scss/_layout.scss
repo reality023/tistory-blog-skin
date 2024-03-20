@@ -25,12 +25,6 @@ body {
   border-left: 1px solid #eeeeee;
 }
 
-#content-inner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 // 최상단 타이틀 텍스트
 .content-title {
   width: 100%;
@@ -67,50 +61,62 @@ body {
 #content-inner {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 960px;
   width: 100%;
   font-weight: bold;
   line-height: 1.5;
+  margin-top: 80px;
 
-  // 컨텐츠 상단 영역
-  & > #head {
-    text-align: center;
-    border-bottom: 1px solid #cccccc;
+  #content-group {
+    border-top: 5px solid black;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    padding: 40px;
 
-    // 제목글
-    h2 {
+    & + #content-group {
+      margin-top: 40px;
+    }
+
+    // 컨텐츠 상단 영역
+    & > #head {
+      text-align: center;
+      border-bottom: 1px solid #cccccc;
+
+      // 제목글
+      h2 {
+        width: 100%;
+        font-size: 36px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+
+      // 제목글 하단 날짜
+      .date {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(62, 62, 62);
+        border-radius: 5px;
+        display: flex;
+      }
+    }
+
+    // 컨텐츠 내용 영역
+    #body {
       width: 100%;
-      font-size: 48px;
-      box-sizing: border-box;
-      border-radius: 10px;
-      color: #ffffff;
-      font-weight: 800;
-      text-align: left;
-      padding: 30px 30px 0;
-    }
 
-    // 제목글 하단 날짜
-    .date {
-      font-size: 16px;
-      color: rgb(62, 62, 62);
-      border-radius: 5px;
-      display: flex;
-      padding: 0 30px 20px;
-    }
-  }
+      &.entry {
+        line-height: 1.5;
+        font-weight: 400;
+      }
 
-  // 컨텐츠 내용 영역
-  #body {
-    width: 100%;
-    padding: 0 30px;
-
-    &.entry {
-      line-height: 1.5;
-      font-weight: 400;
-    }
-
-    figure {
-      margin: 10px 0;
+      figure {
+        margin: 10px 0;
+      }
     }
   }
 }
@@ -136,7 +142,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
 }
 
 .top svg {
@@ -148,10 +157,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 0 10px;
   position: absolute;
-  right: 20px;
+  left: 20px;
   width: 50px;
   height: 50px;
 }

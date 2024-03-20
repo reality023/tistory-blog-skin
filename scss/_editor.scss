@@ -50,13 +50,12 @@ pre code.hljs {
     display: flex;
     margin-top: 16px;
     a {
-      font-size: 14px;
+      font-size: 11px;
       line-height: 14px;
-      padding: 10px 20px;
+      padding: 5px 10px;
       border-radius: 5px;
       display: block;
-      background-color: #2f2f2f;
-      background: linear-gradient(#ff976d, #ff6c5f);
+      background-color: #666666;
       color: white;
     }
 
@@ -73,30 +72,34 @@ pre code.hljs {
 #content-inner {
   font-family: "Wanted Sans Variable";
 
-  h1,
-  h2,
-  h3 {
-    line-height: 200%;
-    letter-spacing: 1px;
-  }
+  #content-group {
+    #body {
+      h1,
+      h2,
+      h3 {
+        line-height: 200%;
+      }
 
-  h1 {
-    font-size: 32px;
-    font-weight: 700;
-  }
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+      }
 
-  h2 {
-    font-size: 28px;
-    font-weight: 700;
-  }
+      h2 {
+        font-size: 24px;
+        font-weight: 600;
+      }
 
-  h3 {
-    font-size: 24px;
-    font-size: 700;
-  }
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
 
-  p {
-    font-size: 20px;
-    letter-spacing: -1px;
+      p {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 140%;
+      }
+    }
   }
 }
