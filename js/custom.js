@@ -24,73 +24,73 @@ if (window.location.href === "https://gridy.tistory.com/") {
 }
 
 // 효과 적용
-const transitionExit = (data) => {
-  let tl = gsap.timeline();
-  tl.to(".page-transition", {
-    duration: 0.5,
-    scaleY: 1,
-    y: "0",
-    transformOrigin: "top",
-    stagger: 0.2,
-  });
-  tl.to(".page-transition", {
-    duration: 0.5,
-    scaleY: 0,
-    y: "0",
-    transformOrigin: "top",
-    stagger: 0.2,
-    delay: 0.5,
-  });
-};
+// const transitionExit = (data) => {
+//   let tl = gsap.timeline();
+//   tl.to(".page-transition", {
+//     duration: 0.5,
+//     scaleY: 1,
+//     y: "0",
+//     transformOrigin: "top",
+//     stagger: 0.2,
+//   });
+//   tl.to(".page-transition", {
+//     duration: 0.5,
+//     scaleY: 0,
+//     y: "0",
+//     transformOrigin: "top",
+//     stagger: 0.2,
+//     delay: 0.5,
+//   });
+// };
 
-const transitionEnter = (data) => {
-  let tl = gsap.timeline();
-};
+// const transitionEnter = (data) => {
+//   let tl = gsap.timeline();
+// };
 
-const transitionIn = (data) => {
-  let tl = gsap.timeline();
-  tl.fromTo(
-    ".page-transition",
-    {
-      scaleY: 1,
-    },
-    {
-      duration: 0.5,
-      scaleY: 0,
-      transformOrigin: "top",
-      stagger: 0.1,
-      delay: 1,
-    }
-  );
-};
+// const transitionIn = (data) => {
+//   let tl = gsap.timeline();
+//   tl.fromTo(
+//     ".page-transition",
+//     {
+//       scaleY: 1,
+//     },
+//     {
+//       duration: 0.5,
+//       scaleY: 0,
+//       transformOrigin: "top",
+//       stagger: 0.1,
+//       delay: 1,
+//     }
+//   );
+// };
 
-function delay(n) {
-  n = n || 2000;
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
+// function delay(n) {
+//   n = n || 2000;
+//   return new Promise((done) => {
+//     setTimeout(() => {
+//       done();
+//     }, n);
+//   });
+// }
 
-barba.init({
-  sync: true,
-  transitions: [
-    {
-      name: "transition",
-      async leave(data) {
-        const done = this.async();
-        transitionExit(data);
+// barba.init({
+//   sync: true,
+//   transitions: [
+//     {
+//       name: "transition",
+//       async leave(data) {
+//         const done = this.async();
+//         transitionExit(data);
 
-        await delay(1000);
-        done();
-      },
-      async enter(data) {
-        transitionEnter(data);
-      },
-      async once(data) {
-        transitionIn(data);
-      },
-    },
-  ],
-});
+//         await delay(1000);
+//         done();
+//       },
+//       async enter(data) {
+//         transitionEnter(data);
+//       },
+//       async once(data) {
+//         transitionIn(data);
+//       },
+//     },
+//   ],
+// });

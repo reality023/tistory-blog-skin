@@ -1096,6 +1096,188 @@
     </div>
 
     <div id="wrap" class="content-wrap" data-barba="container">
+      <div id="sidebar">
+        <h1>
+          <a href="https://gridy.tistory.com/">
+            <!-- <img src="./images/logo.svg" /> -->
+            <span>GRIDY</span>
+          </a>
+          <div class="jobs">WEB FRONTEND DEVELOPER</div>
+        </h1>
+
+        <!-- widget menu
+			
+
+			-->
+
+        <!-- widget counter
+			
+			-->
+
+        <div class="widget category">
+          <!-- Category -->
+          <div class="category-title">CATEGORY</div>
+          <ul class="tt_category">
+            <li class="">
+              <a href="/category" class="link_tit"> ALL </a>
+              <ul class="category_list">
+                <li class="">
+                  <a href="/category/Free" class="link_item"> Free </a>
+                </li>
+                <li class="">
+                  <a href="/category/Memo" class="link_item"> Memo </a>
+                </li>
+                <li class="">
+                  <a href="/category/Link" class="link_item"> Link </a>
+                </li>
+                <li class="">
+                  <a href="/category/Diary" class="link_item"> Diary </a>
+                  <ul class="sub_category_list">
+                    <li class="">
+                      <a href="/category/Diary/Sparta" class="link_sub_item">
+                        Sparta
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="/category/Diary/HangHae99" class="link_sub_item">
+                        HangHae99
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="/category/Study" class="link_item"> Study </a>
+                </li>
+                <li class="">
+                  <a href="/category/Review" class="link_item"> Review </a>
+                  <ul class="sub_category_list">
+                    <li class="">
+                      <a href="/category/Review/IT" class="link_sub_item">
+                        IT
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="/category/Review/Game" class="link_sub_item">
+                        Game
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="/category/Development" class="link_item">
+                    Development
+                  </a>
+                </li>
+                <li class="">
+                  <a href="/category/React" class="link_item"> React </a>
+                  <ul class="sub_category_list">
+                    <li class="">
+                      <a
+                        href="/category/React/Framer%20Motion"
+                        class="link_sub_item"
+                      >
+                        Framer Motion
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="/category/React%20Native" class="link_item">
+                    React Native
+                  </a>
+                </li>
+                <li class="">
+                  <a href="/category/Node.js" class="link_item"> Node.js </a>
+                </li>
+                <li class="">
+                  <a href="/category/Flutter" class="link_item"> Flutter </a>
+                </li>
+                <li class="">
+                  <a href="/category/Mac" class="link_item"> Mac </a>
+                </li>
+                <li class="">
+                  <a href="/category/Ubuntu" class="link_item"> Ubuntu </a>
+                </li>
+                <li class="">
+                  <a href="/category/AWS" class="link_item"> AWS </a>
+                </li>
+                <li class="">
+                  <a href="/category/Teach" class="link_item"> Teach </a>
+                </li>
+                <li class="">
+                  <a href="/category/Visual%20Studio%20Code" class="link_item">
+                    Visual Studio Code
+                  </a>
+                </li>
+                <li class="">
+                  <a href="/category/Docker" class="link_item"> Docker </a>
+                </li>
+                <li class="">
+                  <a href="/category/Git" class="link_item"> Git </a>
+                </li>
+                <li class="">
+                  <a href="/category/Algorithm" class="link_item">
+                    Algorithm
+                  </a>
+                </li>
+                <li class="">
+                  <a href="/category/JavaScript" class="link_item">
+                    JavaScript
+                  </a>
+                </li>
+                <li class="">
+                  <a href="/category/Dart" class="link_item"> Dart </a>
+                </li>
+                <li class="">
+                  <a href="/category/Error" class="link_item"> Error </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Notice -->
+
+        <div class="widget notice">
+          <em>notice</em>
+          <ul>
+            <li><a href="/notice/106">블로그 폰트 변경</a></li>
+            <li><a href="/notice/32">초보 웹 퍼블리셔 입니다.</a></li>
+          </ul>
+        </div>
+
+        <div class="widget recent">
+          <!-- Recent Comments -->
+          <em>comments</em>
+          <ul id="recentComments">
+            <li>
+              <a href="/71#comment13123719" title="  VETA〃2022">멋져용</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Links -->
+        <div class="widget link">
+          <ul></ul>
+        </div>
+        <!-- Search -->
+        <div class="widget search text-center">
+          <label for="search" class="screen_out">블로그 내 검색</label>
+          <input
+            id="search"
+            class="search"
+            placeholder="press enter to search…"
+            type="text"
+            name="search"
+            value=""
+            onkeypress="if (event.keyCode == 13) { try {
+    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
+    document.getElementsByName('search')[0].value = '';
+    return false;
+} catch (e) {} }"
+          />
+        </div>
+
+        <div class="blank"></div>
+      </div>
       <div id="content">
         <header class="top">
           <svg
@@ -3848,205 +4030,6 @@
         <!-- content-inner close -->
       </div>
       <!-- content close -->
-
-      <div id="sidebar">
-        <h1>
-          <div id="sidebarClose" class="sidebar-close">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="11"
-              height="18"
-              viewBox="0 0 11 18"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M10.0607 10.0607L3.06069 17.0607C2.4749 17.6464 1.52516 17.6464 0.939371 17.0607C0.353585 16.4749 0.353584 15.5251 0.939371 14.9393L6.87871 9L0.93937 3.06066C0.353583 2.47487 0.353583 1.52513 0.93937 0.939341C1.52516 0.353554 2.4749 0.353554 3.06069 0.93934L10.0607 7.93934C10.6465 8.52513 10.6465 9.47487 10.0607 10.0607Z"
-                fill="#EAC9FF"
-              ></path>
-            </svg>
-          </div>
-          <a href="https://gridy.tistory.com/">
-            <!-- <img src="./images/logo.svg" /> -->
-            <span>GRIDY</span>
-          </a>
-          <div class="jobs">Web Frontend Developer</div>
-        </h1>
-
-        <!-- widget menu
-			
-
-			-->
-
-        <!-- widget counter
-			
-			-->
-
-        <div class="widget category">
-          <!-- Category -->
-          <div class="category-title">CATEGORY</div>
-          <ul class="tt_category">
-            <li class="">
-              <a href="/category" class="link_tit"> ALL </a>
-              <ul class="category_list">
-                <li class="">
-                  <a href="/category/Free" class="link_item"> Free </a>
-                </li>
-                <li class="">
-                  <a href="/category/Memo" class="link_item"> Memo </a>
-                </li>
-                <li class="">
-                  <a href="/category/Link" class="link_item"> Link </a>
-                </li>
-                <li class="">
-                  <a href="/category/Diary" class="link_item"> Diary </a>
-                  <ul class="sub_category_list">
-                    <li class="">
-                      <a href="/category/Diary/Sparta" class="link_sub_item">
-                        Sparta
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="/category/Diary/HangHae99" class="link_sub_item">
-                        HangHae99
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a href="/category/Study" class="link_item"> Study </a>
-                </li>
-                <li class="">
-                  <a href="/category/Review" class="link_item"> Review </a>
-                  <ul class="sub_category_list">
-                    <li class="">
-                      <a href="/category/Review/IT" class="link_sub_item">
-                        IT
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="/category/Review/Game" class="link_sub_item">
-                        Game
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a href="/category/Development" class="link_item">
-                    Development
-                  </a>
-                </li>
-                <li class="">
-                  <a href="/category/React" class="link_item"> React </a>
-                  <ul class="sub_category_list">
-                    <li class="">
-                      <a
-                        href="/category/React/Framer%20Motion"
-                        class="link_sub_item"
-                      >
-                        Framer Motion
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a href="/category/React%20Native" class="link_item">
-                    React Native
-                  </a>
-                </li>
-                <li class="">
-                  <a href="/category/Node.js" class="link_item"> Node.js </a>
-                </li>
-                <li class="">
-                  <a href="/category/Flutter" class="link_item"> Flutter </a>
-                </li>
-                <li class="">
-                  <a href="/category/Mac" class="link_item"> Mac </a>
-                </li>
-                <li class="">
-                  <a href="/category/Ubuntu" class="link_item"> Ubuntu </a>
-                </li>
-                <li class="">
-                  <a href="/category/AWS" class="link_item"> AWS </a>
-                </li>
-                <li class="">
-                  <a href="/category/Teach" class="link_item"> Teach </a>
-                </li>
-                <li class="">
-                  <a href="/category/Visual%20Studio%20Code" class="link_item">
-                    Visual Studio Code
-                  </a>
-                </li>
-                <li class="">
-                  <a href="/category/Docker" class="link_item"> Docker </a>
-                </li>
-                <li class="">
-                  <a href="/category/Git" class="link_item"> Git </a>
-                </li>
-                <li class="">
-                  <a href="/category/Algorithm" class="link_item">
-                    Algorithm
-                  </a>
-                </li>
-                <li class="">
-                  <a href="/category/JavaScript" class="link_item">
-                    JavaScript
-                  </a>
-                </li>
-                <li class="">
-                  <a href="/category/Dart" class="link_item"> Dart </a>
-                </li>
-                <li class="">
-                  <a href="/category/Error" class="link_item"> Error </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!-- Notice -->
-
-        <div class="widget notice">
-          <em>notice</em>
-          <ul>
-            <li><a href="/notice/106">블로그 폰트 변경</a></li>
-            <li><a href="/notice/32">초보 웹 퍼블리셔 입니다.</a></li>
-          </ul>
-        </div>
-
-        <div class="widget recent">
-          <!-- Recent Comments -->
-          <em>comments</em>
-          <ul id="recentComments">
-            <li>
-              <a href="/71#comment13123719" title="  VETA〃2022">멋져용</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Links -->
-        <div class="widget link">
-          <ul></ul>
-        </div>
-        <!-- Search -->
-        <div class="widget search text-center">
-          <label for="search" class="screen_out">블로그 내 검색</label>
-          <input
-            id="search"
-            class="search"
-            placeholder="press enter to search…"
-            type="text"
-            name="search"
-            value=""
-            onkeypress="if (event.keyCode == 13) { try {
-    window.location.href = '/search' + '/' + looseURIEncode(document.getElementsByName('search')[0].value);
-    document.getElementsByName('search')[0].value = '';
-    return false;
-} catch (e) {} }"
-          />
-        </div>
-
-        <div class="blank"></div>
-      </div>
     </div>
     <!-- wrap close -->
 
@@ -4134,81 +4117,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <style></style>
-    <script>
-      const transitionExit = (data) => {
-        let tl = gsap.timeline();
-        tl.to(".page-transition", {
-          duration: 0.5,
-          y: "0",
-          transformOrigin: "top",
-          stagger: 0.2,
-          ease: "power2.inOut",
-        });
-        tl.to(".page-transition", {
-          duration: 0.5,
-          y: "-100%",
-          transformOrigin: "top",
-          stagger: 0.2,
-          delay: 0.5,
-          ease: "power2.inOut",
-        });
-      };
-
-      const transitionEnter = (data) => {
-        let tl = gsap.timeline();
-      };
-
-      const transitionIn = (data) => {
-        let tl = gsap.timeline();
-        tl.fromTo(
-          ".page-transition",
-          {
-            y: 0,
-          },
-          {
-            duration: 0.5,
-            y: "-100%",
-            transformOrigin: "top",
-            stagger: 0.1,
-            delay: 1,
-            ease: "power2.inOut",
-          }
-        );
-      };
-
-      function delay(n) {
-        n = n || 2000;
-        return new Promise((done) => {
-          setTimeout(() => {
-            done();
-          }, n);
-        });
-      }
-
-      barba.init({
-        sync: true,
-        transitions: [
-          {
-            name: "transition",
-            async leave(data) {
-              const done = this.async();
-              transitionExit(data);
-
-              await delay(1000);
-              window.onload = () => {
-                done();
-              };
-            },
-            async enter(data) {
-              transitionEnter(data);
-            },
-            async once(data) {
-              transitionIn(data);
-            },
-          },
-        ],
-      });
-    </script>
     <!-- custom library end -->
     <!-- ####################### -->
     <!-- GRIDY CUSTOM SCRIPT END -->

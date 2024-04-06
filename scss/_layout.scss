@@ -15,16 +15,6 @@ body {
   width: 100%;
 }
 
-#sidebar {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  width: 520px;
-  min-height: 100vh;
-  background-color: #ffffff;
-  border-left: 1px solid #eeeeee;
-}
-
 // 최상단 타이틀 텍스트
 .content-title {
   width: 100%;
