@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 /*
 reset css
 */
@@ -5,8 +6,6 @@ reset css
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 html,
 body,
 div,
@@ -153,9 +152,28 @@ button {
 /*
 reset css end
 */
+@font-face {
+  font-family: "KimjungchulGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KimjungchulGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KimjungchulGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
 html {
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
   text-size-adjust: none;
   font-size: 16px;
 }
@@ -168,7 +186,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "KimjungchulGothic", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  font-weight: 400;
 }
 
 body,
@@ -270,11 +289,6 @@ textarea {
   outline: none;
 }
 
-::-moz-selection {
-  background: #888;
-  color: #fff;
-}
-
 ::selection {
   background: #888;
   color: #fff;
@@ -284,12 +298,16 @@ div,
 span,
 input,
 textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 #tistoryProfileLayer div {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   -ms-box-sizing: content-box;
   -o-box-sizing: content-box;
   box-sizing: content-box;
@@ -374,7 +392,7 @@ pre code.hljs {
 }
 
 #content-inner {
-  font-family: "Wanted Sans Variable";
+  font-family: "KimjungchulGothic";
 }
 #content-inner #content-group #body h1,
 #content-inner #content-group #body h2,
@@ -484,7 +502,6 @@ body {
   flex-direction: column;
   max-width: 960px;
   width: 100%;
-  font-weight: bold;
   line-height: 1.5;
   margin-top: 80px;
 }
@@ -857,11 +874,6 @@ body {
   padding: 0 20px;
   font-size: 16px;
 }
-#sidebar .search input::-moz-placeholder {
-  color: #999999;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
-}
 #sidebar .search input::placeholder {
   color: #999999;
   transition: color 0.3s;
@@ -870,9 +882,56 @@ body {
   outline: none;
   border: 1px solid #666666;
 }
-#sidebar .search input:focus::-moz-placeholder {
-  color: #cccccc;
-}
 #sidebar .search input:focus::placeholder {
   color: #cccccc;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#recent-post h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#recent-post ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#recent-post ul li {
+  display: flex;
+  width: 300px;
+  height: 250px;
+}
+#recent-post ul li a.thumb {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+#recent-post ul li a.thumb img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #e0e0e0;
+}
+#recent-post ul li a.thumb span {
+  display: block;
+}
+
+#foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#foot .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#foot .left a {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

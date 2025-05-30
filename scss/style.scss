@@ -1,7 +1,8 @@
-@import "./variable";
-@import "./reset";
-@import "./common";
-@import "./editor";
-@import "./comment";
-@import "./layout";
-@import "./sidebar";
+@use "./variable";
+@use "./reset";
+@use "./common";
+@use "./editor";
+@use "./comment";
+@use "./layout";
+@use "./sidebar";
+@use "./recent";
